@@ -24,3 +24,149 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer components {
+  .hero-section {
+    @apply flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 px-4;
+  }
+  
+  .section-container {
+    @apply w-full max-w-4xl mx-auto px-4 py-16;
+  }
+  
+  .section-container-wide {
+    @apply w-full max-w-6xl mx-auto px-4 py-16;
+  }
+  
+  .container-centered {
+    @apply text-center max-w-4xl mx-auto;
+  }
+
+  .hero-title {
+    @apply text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6;
+  }
+  
+  .section-title {
+    @apply text-3xl font-bold text-gray-900 dark:text-white mb-4;
+  }
+  
+  .hero-subtitle {
+    @apply text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed;
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto;
+  }
+  
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600;
+  }
+  
+  .body-text {
+    @apply text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed;
+  }
+
+  .section-header {
+    @apply text-center mb-12;
+  }
+  
+  .section-divider {
+    @apply w-24 h-1 bg-blue-600 mx-auto mb-8;
+  }
+
+  .btn-primary {
+    @apply px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium;
+  }
+  
+  .btn-secondary {
+    @apply px-8 py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-600 hover:text-white transition-colors font-medium;
+  }
+  
+  .btn-small {
+    @apply flex-1 text-center py-2 px-4 rounded-md transition-colors text-sm font-medium;
+  }
+  
+  .btn-github {
+    @apply bg-gray-900 dark:bg-gray-700 text-white hover:bg-gray-800 dark:hover:bg-gray-600;
+  }
+  
+  .btn-demo {
+    @apply bg-blue-600 text-white hover:bg-blue-700;
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden;
+  }
+  
+  .card-header {
+    @apply h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center;
+  }
+  
+  .card-content {
+    @apply p-6;
+  }
+  
+  .card-title {
+    @apply text-xl font-bold text-gray-900 dark:text-white mb-3;
+  }
+  
+  .card-description {
+    @apply text-gray-600 dark:text-gray-400 mb-4 text-sm leading-relaxed;
+  }
+
+  .grid-about {
+    @apply grid md:grid-cols-2 gap-12 items-center;
+  }
+  
+  .grid-projects {
+    @apply grid md:grid-cols-2 lg:grid-cols-3 gap-8;
+  }
+
+  .skill-tag {
+    @apply px-3 py-1 rounded-full text-sm font-medium;
+  }
+  
+  .skill-tag-blue {
+    @apply px-3 py-1 rounded-full text-sm font-medium bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200;
+  }
+  
+  .skill-tag-green {
+    @apply px-3 py-1 rounded-full text-sm font-medium bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200;
+  }
+  
+  .skill-tag-purple {
+    @apply px-3 py-1 rounded-full text-sm font-medium bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200;
+  }
+  
+  .skill-tag-pink {
+    @apply px-3 py-1 rounded-full text-sm font-medium bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200;
+  }
+  
+  .tech-tag {
+    @apply px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-xs font-medium;
+  }
+
+  .profile-avatar {
+    @apply w-64 h-64 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center;
+  }
+  
+  .profile-avatar-inner {
+    @apply w-56 h-56 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center;
+  }
+
+  .nav-buttons {
+    @apply flex gap-4 justify-center flex-col sm:flex-row;
+  }
+  
+  .project-buttons {
+    @apply flex gap-3;
+  }
+  
+  .skill-tags {
+    @apply flex flex-wrap gap-3;
+  }
+  
+  .tech-tags {
+    @apply flex flex-wrap gap-2 mb-4;
+  }
+}
