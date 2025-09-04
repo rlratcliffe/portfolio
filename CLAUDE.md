@@ -10,7 +10,7 @@ This file complements the README.md and avoids duplicating information to preven
 
 - **App Router**: Uses Next.js 15 App Router with components in `src/app/components/`
 - **TypeScript**: Path alias `@/*` maps to `./src/*`
-- **Component Structure**: Single-page app with About and Projects sections
+- **Component Structure**: Single-page app with About and SoftwareProjects sections
 
 ## Styling System
 

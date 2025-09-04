@@ -38,7 +38,7 @@ export default function Home() {
         </section>
 
         <About />
-        <Projects />
+        <Projects projects={softwareEngineer.getProjects()} />
       </main>
     </div>
   );
