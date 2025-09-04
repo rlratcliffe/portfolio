@@ -4,6 +4,7 @@ Note: This is the current model to follow, but it is always subject to change.
 
 ## Development
 - Use imperative commit messages.
+- Use [semantic prefixes](https://docs.excalidraw.com/docs/introduction/contributing#pull-request-guidelines) in commit messages where possible
 
 ## Architecture
 - **Modular components**: Separate files for major sections
@@ -12,3 +13,5 @@ Note: This is the current model to follow, but it is always subject to change.
   - Why: Readability and maintainability of classes. Reduces how many classes are included in `className=""` from 10+ to 1
 - **Clean separation**: Structure, styling, and behavior separated as much as possible
   - Why: Maintainability
+- **Domain Models**: Separate classes for SoftwareEngineer and Projects
+  - Why: Separation of concerns
