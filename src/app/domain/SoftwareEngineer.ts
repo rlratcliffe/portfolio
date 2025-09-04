@@ -1,11 +1,10 @@
 import {StaticImageData} from "next/image";
+import photo from "@/app/assets/img/bug.webp";
 
 interface ISoftwareEngineer {
     getName(): string;
     getTagline(): string;
 }
-
-import photo from "@/app/assets/img/bug.webp";
 
 export class SoftwareEngineer implements ISoftwareEngineer {
     private name: string = "Rob Ratcliffe";
