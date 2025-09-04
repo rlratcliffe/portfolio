@@ -1,6 +1,9 @@
 # Decision Record
 
-Opinions subject to change.
+Note: This is the current model to follow, but it is always subject to change.
+
+## Development
+- Use imperative commit messages.
 
 ## Architecture
 - **Modular components**: Separate files for major sections
