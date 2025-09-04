@@ -41,6 +41,18 @@ body {
   .container-centered {
     @apply text-center max-w-4xl mx-auto;
   }
+  
+  .hero-container {
+    @apply mx-auto grid md:grid-cols-[3fr_1fr] gap-8 items-center;
+  }
+  
+  .hero-content {
+    @apply text-left;
+  }
+  
+  .hero-image {
+    @apply flex justify-center md:justify-end;
+  }
 
   .hero-title {
     @apply text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6;
@@ -155,7 +167,7 @@ body {
   }
 
   .nav-buttons {
-    @apply flex gap-4 justify-center flex-col sm:flex-row;
+    @apply flex gap-4 justify-start flex-col sm:flex-row;
   }
   
   .project-buttons {
