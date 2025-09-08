@@ -14,17 +14,12 @@ export default function Home() {
           <div className="hero-container">
             <div className="hero-content">
               <h1 className="hero-title">
-                Hi! I'm&nbsp;
+                Hi! I&apos;m&nbsp;
                   {softwareEngineer.getName()}
               </h1>
               <p className="hero-subtitle">
                 {softwareEngineer.getTagline()}
               </p>
-              <div className="nav-buttons">
-                <a href="#projects" className="btn-secondary">
-                  View Projects
-                </a>
-              </div>
             </div>
             <div className="hero-image">
               <Image src={softwareEngineer.getPhoto()} alt="Profile picture" width={400} height={400} />

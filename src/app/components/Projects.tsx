@@ -10,12 +10,9 @@ export default function Projects({projects}: ProjectsProps) {
         <section id="projects" className="section-container-wide">
             <div className="section-header">
                 <h2 className="section-title">
-                    My Projects
+                    Projects
                 </h2>
                 <div className="section-divider"></div>
-                <p className="section-subtitle">
-                    Section subtitle
-                </p>
             </div>
 
             <div className="grid-projects">
