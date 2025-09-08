@@ -23,9 +23,6 @@ export default function Home() {
                 {softwareEngineer.getTagline()}
               </p>
               <div className="nav-buttons">
-                <a href="#about" className="btn-primary">
-                  About Me
-                </a>
                 <a href="#projects" className="btn-secondary">
                   View Projects
                 </a>
@@ -37,7 +34,6 @@ export default function Home() {
           </div>
         </section>
 
-        <About />
         <Projects projects={softwareEngineer.getProjects()} />
       </main>
     </div>
