@@ -15,9 +15,7 @@ export default function Home() {
             <div className="hero-content">
               <h1 className="hero-title">
                 Hi! I'm&nbsp;
-                <span className="gradient-text">
                   {softwareEngineer.getName()}
-                </span>
               </h1>
               <p className="hero-subtitle">
                 {softwareEngineer.getTagline()}
