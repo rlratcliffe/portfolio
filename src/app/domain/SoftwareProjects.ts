@@ -11,11 +11,11 @@ export class SoftwareProjects {
     private projects = [
         {
             id: 1,
-            title: "Example",
-            description: "",
+            title: "Portfolio",
+            description: "This portfolio that you are currently viewing is also one of my projects.",
             technologies: ["Next.js"],
-            github: "#",
-            demo: "#"
+            github: "https://github.com/rlratcliffe/portfolio",
+            demo: ""
         }
     ];
 
