@@ -43,7 +43,7 @@ body {
   }
   
   .hero-container {
-    @apply mx-auto grid md:grid-cols-[3fr_1fr] gap-8 items-center;
+    @apply mx-auto grid md:grid-cols-[3fr_1fr] gap-8 items-center px-15;
   }
   
   .hero-content {
@@ -131,7 +131,7 @@ body {
   }
   
   .grid-projects {
-    @apply flex flex-wrap justify-center gap-8;
+    @apply flex flex-wrap justify-center gap-15;
   }
 
   .skill-tag {
