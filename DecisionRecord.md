@@ -15,3 +15,5 @@ Note: This is the current model to follow, but it is always subject to change.
   - Why: Maintainability
 - **Domain Models**: Separate classes for SoftwareEngineer and Projects
   - Why: Separation of concerns
+- **Images in /public**: Images in /public
+  - Why: Easier to generate dynamically
