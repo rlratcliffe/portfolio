@@ -39,9 +39,11 @@ export default function Projects({projects}: ProjectsProps) {
                             </div>
 
                             <div className="project-buttons">
-                                <a href={project.github} target={"_blank"} className="btn-small btn-github">
-                                    GitHub
-                                </a>
+                                {project.github && (
+                                    <a href={project.github} target={"_blank"} className="btn-small btn-github">
+                                        GitHub
+                                    </a>
+                                )}
                                 {project.demo && (
                                     <a href={project.demo} className="btn-small btn-demo">
                                         Live Demo
