@@ -15,7 +15,7 @@ export default function Home() {
             <div className="hero-content">
               <h1 className="hero-title">
                 Hi! I&apos;m&nbsp;
-                  {softwareEngineer.getName()}
+                  <span className="name">{softwareEngineer.getName()}</span>
               </h1>
               <p className="hero-subtitle">
                 {softwareEngineer.getTagline()}
