@@ -1,6 +1,9 @@
+import {StaticImageData} from "next/image";
+
 export interface SoftwareProject {
     id: number;
     title: string;
+    img: StaticImageData;
     description: string;
     technologies: string[];
     github: string;

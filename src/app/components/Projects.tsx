@@ -1,4 +1,5 @@
 import {SoftwareProject} from "@/app/domain/SoftwareProjects";
+import Image from "next/image";
 
 interface ProjectsProps {
     projects: SoftwareProject[];
@@ -18,9 +19,13 @@ export default function Projects({projects}: ProjectsProps) {
             <div className="grid-projects">
                 {projects.map((project) => (
                     <div key={project.id} className="card">
-                        <div className="card-header">
-                            <span className="text-white text-6xl">🚀</span>
-                        </div>
+                        {project.img ? (
+                            <Image src={`/assets/img/projects/${project.img}`} alt="Project image" width={400} height={400} />
+                        ) : (
+                            <div className="card-header">
+                                <span className="text-white text-6xl">🚀</span>
+                            </div>
+                        )}
 
                         <div className="card-content">
                             <h3 className="card-title">
