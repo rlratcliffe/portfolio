@@ -19,6 +19,15 @@ export class SoftwareProjects {
             technologies: ["Next.js"],
             github: "https://github.com/rlratcliffe/portfolio",
             demo: ""
+        },
+        {
+            id: 2,
+            title: "DataSonnet Playground",
+            description: "A programming playground to experiment with the DataSonnet transformation language.",
+            technologies: ["React", "JavaScript"],
+            github: "",
+            demo: "",
+            img: "ds-playground.png"
         }
     ];
 
