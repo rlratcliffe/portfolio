@@ -1,4 +1,3 @@
-import About from "./components/About";
 import Projects from "./components/Projects";
 import {SoftwareEngineer} from "@/app/domain/SoftwareEngineer";
 import Image from "next/image";
