@@ -1,5 +1,3 @@
-import {StaticImageData} from "next/image";
-import photo from "@/app/assets/img/bug.webp";
 import {SoftwareProjects, SoftwareProject} from "@/app/domain/SoftwareProjects";
 
 interface ISoftwareEngineer {
@@ -20,8 +18,8 @@ export class SoftwareEngineer implements ISoftwareEngineer {
         return this.tagline;
     }
 
-    getPhoto(): StaticImageData {
-        return photo;
+    getPhoto(): string {
+        return "rob.webp";
     }
 
     getProjects(): SoftwareProject[] {
