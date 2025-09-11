@@ -15,7 +15,7 @@ export class SoftwareProjects {
         {
             id: 1,
             title: "Portfolio",
-            description: "This portfolio that you are currently viewing is also one of my projects.",
+            description: "This portfolio!",
             technologies: ["Next.js"],
             github: "https://github.com/rlratcliffe/portfolio",
             demo: ""
