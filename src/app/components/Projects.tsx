@@ -1,5 +1,4 @@
 import {SoftwareProject} from "@/app/domain/SoftwareProjects";
-import Image from "next/image";
 
 interface ProjectsProps {
     projects: SoftwareProject[];
