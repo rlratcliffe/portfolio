@@ -17,3 +17,6 @@ Note: This is the current model to follow, but it is always subject to change.
   - Why: Separation of concerns
 - **Images in /public**: Images in /public
   - Why: Easier to generate dynamically
+- **Posthog**
+  - Why: Continue learning about product analytics tools, add events, tracking, and surveys
+    - Currently using without cookies for simplicity, will evaluate later
