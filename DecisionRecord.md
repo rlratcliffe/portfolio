@@ -5,6 +5,7 @@ Note: This is the current model to follow, but it is always subject to change.
 ## Development
 - Use imperative commit messages.
 - Use [semantic prefixes](https://docs.excalidraw.com/docs/introduction/contributing#pull-request-guidelines) in commit messages where possible
+  - Why: Once reason: because it immediately communicates intent
 
 ## Architecture
 - **Modular components**: Separate files for major sections
