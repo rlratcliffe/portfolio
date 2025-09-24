@@ -1,6 +1,7 @@
 import Projects from "./components/Projects";
 import {SoftwareEngineer} from "@/app/domain/SoftwareEngineer";
 import Image from "next/image";
+import CookieBanner from "./components/CookieBanner";
 
 export default function Home() {
 
@@ -28,6 +29,7 @@ export default function Home() {
 
         <Projects projects={softwareEngineer.getProjects()} />
       </main>
+    <CookieBanner />
     </div>
   );
 }

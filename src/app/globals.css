@@ -195,4 +195,28 @@ body {
   .tech-tags {
     @apply flex flex-wrap gap-2 mb-4;
   }
+
+  .cookie-banner {
+    @apply fixed bottom-0 left-0 right-0 bg-gray-900 dark:bg-gray-100 border-t border-gray-700 dark:border-gray-300 shadow-lg z-50 p-6;
+  }
+
+  .cookie-banner-content {
+    @apply max-w-4xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6;
+  }
+
+  .cookie-banner-text {
+    @apply text-base text-white dark:text-gray-800 flex-1;
+  }
+
+  .cookie-banner-buttons {
+    @apply flex gap-3 flex-shrink-0;
+  }
+
+  .btn-cookie-accept {
+    @apply px-4 py-2 bg-primary-neutral text-black rounded-md hover:bg-accent-neutral hover:text-white transition-colors font-medium text-sm;
+  }
+
+  .btn-cookie-decline {
+    @apply px-4 py-2 border text-black border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-100 hover:text-white dark:hover:bg-gray-700 transition-colors font-medium text-sm;
+  }
 }
