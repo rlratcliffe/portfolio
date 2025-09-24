@@ -12,7 +12,7 @@ export default function CookieBanner() {
   useEffect(() => {
     // check consent status
     setConsentGiven(posthog.get_explicit_consent_status())
-  }, []);
+  }, [posthog]);
 
   const handleAcceptCookies = () => {
     posthog.opt_in_capturing();
@@ -43,7 +43,7 @@ export default function CookieBanner() {
         <div className="cookie-banner-text">
           <p>
             We use cookies to enhance your experience and analyze site usage.
-            By clicking "Accept", you consent to our use of cookies for analytics and personalization.
+            By clicking &quot;Accept&quot;, you consent to our use of cookies for analytics and personalization.
           </p>
         </div>
         <div className="cookie-banner-buttons">
