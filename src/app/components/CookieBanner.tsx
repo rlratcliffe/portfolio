@@ -17,13 +17,13 @@ export default function CookieBanner() {
   const handleAcceptCookies = () => {
     posthog.opt_in_capturing();
     setConsentGiven('granted');
-    console.log("accept")
+    console.log("User granted cookies.")
   };
 
   const handleDeclineCookies = () => {
     posthog.opt_out_capturing();
     setConsentGiven('denied');
-    console.log("decline");
+    console.log("User declined cookies.");
   };
 
   // TODO: Figure out how to create actual tests for this, for now just manual testing
@@ -42,8 +42,8 @@ export default function CookieBanner() {
       <div className="cookie-banner-content">
         <div className="cookie-banner-text">
           <p>
-            We use cookies to enhance your experience and analyze site usage.
-            By clicking &quot;Accept&quot;, you consent to our use of cookies for analytics and personalization.
+            I am using cookies on this site to enhance your experience and analyze site usage.
+            By clicking &quot;Accept&quot;, you consent to the use of cookies for analytics and personalization.
           </p>
         </div>
         <div className="cookie-banner-buttons">
