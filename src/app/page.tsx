@@ -22,7 +22,7 @@ export default function Home() {
               </p>
             </div>
             <div className="hero-image">
-              <Image src={"/assets/img/" + softwareEngineer.getPhoto()} alt="Profile picture" width={250} height={250} />
+              <Image priority={true} src={"/assets/img/" + softwareEngineer.getPhoto()} alt="Profile picture" width={250} height={250} />
             </div>
           </div>
         </section>
