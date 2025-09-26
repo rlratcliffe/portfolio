@@ -43,7 +43,7 @@ export default function CookieBanner() {
         <div className="cookie-banner-text">
           <p>
             I am using cookies on this site to enhance your experience and analyze site usage.
-            By clicking &quot;Accept&quot;, you consent to the use of cookies for analytics and personalization.
+            By clicking "Accept&quot;, you consent to the use of cookies for analytics and personalization.
           </p>
         </div>
         <div className="cookie-banner-buttons">
