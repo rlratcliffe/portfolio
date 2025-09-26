@@ -1,9 +1,6 @@
 name: Deploy to App Platform (API)
 
 on:
-  push:
-    branches:
-      - main
   workflow_run:
     workflows: ['Lint']
     types: [completed]
