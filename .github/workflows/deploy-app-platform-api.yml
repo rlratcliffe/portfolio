@@ -18,7 +18,8 @@ jobs:
           echo "Event name: ${{ github.event_name }}"
           echo "Workflow run conclusion: ${{ github.event.workflow_run.conclusion }}"
           echo "Workflow run head commit message: ${{ github.event.workflow_run.head_commit.message }}"
-          echo "Head commit message: ${{ github.event.head_commit.message }}"
+          echo "Is success: ${{ github.event.workflow_run.conclusion == 'success' }}"
+          echo "Starts with release: ${{ startsWith(github.event.head_commit.message, 'release:') }}"
 
   build-and-deploy:
     runs-on: ubuntu-latest
