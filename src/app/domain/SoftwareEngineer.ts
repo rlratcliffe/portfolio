@@ -19,7 +19,7 @@ export class SoftwareEngineer implements ISoftwareEngineer {
     }
 
     getPhoto(): string {
-        return "rob.webp";
+        return "rob-300.webp";
     }
 
     getProjects(): SoftwareProject[] {
