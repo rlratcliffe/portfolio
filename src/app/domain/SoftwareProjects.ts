@@ -13,16 +13,17 @@ export class SoftwareProjects {
         {
             id: 1,
             title: "Portfolio",
-            description: "This portfolio!",
-            technologies: ["Next.js"],
+            description: "This portfolio, which is being iteratively improved!",
+            technologies: ["React", "Next.js"],
             github: "https://github.com/rlratcliffe/portfolio",
         },
         {
             id: 2,
             title: "DataSonnet Playground",
-            description: "A programming playground to experiment with the DataSonnet transformation language.",
+            description: "Built early in my career, this is a programming playground to experiment with the DataSonnet transformation language.",
             technologies: ["React", "JavaScript"],
-            img: "ds-playground.png"
+            img: "ds-playground.png",
+            demo: "https://youtu.be/zFB5HYyExCY"
         }
     ];
 
