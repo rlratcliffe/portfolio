@@ -1,12 +1,12 @@
 'use client';
 
-import {SoftwareProject} from "@/app/domain/SoftwareProjects";
 import Image from "next/image";
 import { useState } from "react";
 import VideoModal from "./VideoModal";
+import {ISoftwareProject} from "@/app/domain/SoftwareEngineer";
 
 interface ProjectsProps {
-    projects: SoftwareProject[];
+    projects: ISoftwareProject[];
 }
 
 

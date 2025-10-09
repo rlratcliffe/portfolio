@@ -5,7 +5,29 @@ import CookieBanner from "./components/CookieBanner";
 
 export default function Home() {
 
-  const softwareEngineer = new SoftwareEngineer();
+  const projects = [
+        {
+          id: 1,
+          title: "Portfolio",
+          description: "This portfolio, which is being iteratively improved!",
+          technologies: ["React", "Next.js"],
+          github: "https://github.com/rlratcliffe/portfolio",
+        },
+        {
+          id: 2,
+          title: "DataSonnet Playground",
+          description: "Built early in my career, this is a programming playground to experiment with the DataSonnet transformation language.",
+          technologies: ["React", "JavaScript"],
+          img: "ds-playground.png",
+          demo: "https://www.youtube.com/embed/zFB5HYyExCY?si=OfpBJNYJpP2fbphU"
+        }
+  ];
+
+  const softwareEngineer = new SoftwareEngineer(
+      "Rob Ratcliffe",
+      "Builder & Operator",
+      projects
+  );
 
   return (
     <div className="font-sans min-h-screen">
