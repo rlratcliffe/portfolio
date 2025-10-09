@@ -1,5 +1,9 @@
+'use client';
+
 import {SoftwareProject} from "@/app/domain/SoftwareProjects";
 import Image from "next/image";
+import { useState } from "react";
+import VideoModal from "./VideoModal";
 
 interface ProjectsProps {
     projects: SoftwareProject[];
@@ -7,6 +11,7 @@ interface ProjectsProps {
 
 
 export default function Projects({projects}: ProjectsProps) {
+    const [videoUrl, setVideoUrl] = useState<string | null>(null);
     return (
         <section id="projects" className="section-container-wide">
             <div className="section-header">
@@ -18,7 +23,7 @@ export default function Projects({projects}: ProjectsProps) {
 
             <div className="grid-projects">
                 {projects.map((project) => (
-                    <div key={project.id} className="card">
+                    <div key={project.id} className="box card">
                         {project.img ? (
                             <Image src={`/assets/img/projects/${project.img}`} alt="Project image" width={400} height={400} />
                         ) : (
@@ -50,15 +55,25 @@ export default function Projects({projects}: ProjectsProps) {
                                     </a>
                                 )}
                                 {project.demo && (
-                                    <a href={project.demo} className="btn-small btn-demo">
-                                        Live Demo
-                                    </a>
+                                    <button
+                                        onClick={() => setVideoUrl(project.demo!)}
+                                        className="btn-small btn-demo"
+                                    >
+                                        View Demo
+                                    </button>
                                 )}
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
+
+            {videoUrl && (
+                <VideoModal
+                    videoUrl={videoUrl}
+                    onClose={() => setVideoUrl(null)}
+                />
+            )}
         </section>
     );
 }

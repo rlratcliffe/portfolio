@@ -6,6 +6,7 @@ export interface SoftwareProject {
     technologies: string[];
     github?: string;
     demo?: string
+    // TODO: add validation, include as embed video for now
 }
 
 export class SoftwareProjects {
@@ -23,7 +24,7 @@ export class SoftwareProjects {
             description: "Built early in my career, this is a programming playground to experiment with the DataSonnet transformation language.",
             technologies: ["React", "JavaScript"],
             img: "ds-playground.png",
-            demo: "https://youtu.be/zFB5HYyExCY"
+            demo: "https://www.youtube.com/embed/zFB5HYyExCY?si=OfpBJNYJpP2fbphU"
         }
     ];
 
