@@ -1,4 +1,6 @@
 import Projects from "./components/Projects";
+import OpenSourceContributions from "./components/OpenSourceContributions";
+import Navigation from "./components/Navigation";
 import {SoftwareEngineer} from "@/app/domain/SoftwareEngineer";
 import Image from "next/image";
 import CookieBanner from "./components/CookieBanner";
@@ -23,15 +25,33 @@ export default function Home() {
         }
   ];
 
+  const openSourceContributions = [
+    {
+      id: 1,
+      title: "Support Kubernetes updates for built-from-scratch iPaaS",
+      description: "Although I normally like to make smaller PRs, this PR (particularly the docs/AcceptanceTests.md) shows my attention to detail.",
+      technologies: ["Ansible", "Kubernetes"],
+      link: "https://github.com/MS3Inc/tavros/pull/102"
+    },
+    {
+      id: 2,
+      title: "Fix critical issue causing APIs to fail",
+      description: "Reproduced the issue, submitted a fix, was released as part of Camel 4.7.0.",
+      technologies: ["Java"],
+      link: "https://issues.apache.org/jira/browse/CAMEL-20841"
+    }
+  ];
   const softwareEngineer = new SoftwareEngineer(
       "Rob Ratcliffe",
       "Builder & Operator",
-      projects
+      projects,
+      openSourceContributions
   );
 
   return (
     <div className="font-sans min-h-screen">
       <main className="w-full">
+        <Navigation />
         <section className="hero-section">
           <div className="hero-container">
             <div className="hero-content">
@@ -50,6 +70,7 @@ export default function Home() {
         </section>
 
         <Projects projects={softwareEngineer.getProjects()} />
+        <OpenSourceContributions contributions={softwareEngineer.getOpenSource()} />
       </main>
     <CookieBanner />
     </div>

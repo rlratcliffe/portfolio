@@ -1,0 +1,13 @@
+@reference "../globals.css";
+
+.navContainer {
+  @apply sticky top-0 bg-primary-neutral shadow-md z-40 border-b border-gray-200 dark:border-gray-800;
+}
+
+.navContent {
+  @apply max-w-7xl mx-auto px-4 py-4 flex justify-end gap-8;
+}
+
+.navLink {
+  @apply px-6 py-2 text-gray-700 dark:text-black font-medium rounded-lg hover:bg-primary-neutral hover:text-black dark:hover:text-white transition-all duration-300 ease-in-out;
+}

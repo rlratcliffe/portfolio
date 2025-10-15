@@ -13,16 +13,26 @@ export interface ISoftwareProject {
     demo?: string
 }
 
+export interface IOpenSourceContribution {
+    id: number;
+    title: string;
+    description: string;
+    technologies: string[];
+    link: string;
+}
+
 export class SoftwareEngineer implements ISoftwareEngineer {
     private name: string = "";
     private tagline: string = "";
     private projects: ISoftwareProject[] = [];
+    private openSourceContributions: IOpenSourceContribution[] = [];
 
-    constructor(name: string, tagline: string, projects: ISoftwareProject[]) {
+    constructor(name: string, tagline: string, projects: ISoftwareProject[], openSourceContributions: IOpenSourceContribution[]) {
         this.name = name;
         this.tagline = tagline;
         this.validateProjects(projects);
         this.projects = projects;
+        this.openSourceContributions = openSourceContributions;
     }
 
     getName(): string {
@@ -39,6 +49,10 @@ export class SoftwareEngineer implements ISoftwareEngineer {
 
     getProjects(): ISoftwareProject[] {
         return this.projects;
+    }
+
+    getOpenSource(): IOpenSourceContribution[] {
+        return this.openSourceContributions;
     }
 
     private validateProjects(projects: ISoftwareProject[]) {

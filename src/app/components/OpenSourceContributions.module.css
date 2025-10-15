@@ -1,0 +1,17 @@
+@reference "../globals.css";
+
+.section {
+  @apply bg-nyanza;
+}
+
+.cardHeader {
+  @apply h-48 bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center;
+}
+
+.openSourceTitle {
+  @apply text-black;
+}
+
+.contributionLink {
+  @apply bg-green-600 text-white hover:bg-green-700;
+}

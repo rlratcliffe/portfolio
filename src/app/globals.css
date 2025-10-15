@@ -6,6 +6,7 @@
   --color-primary-neutral: #70CAD1;
   --color-accent-neutral: #273E47;
   --color-neutral: #DDD1C7;
+  --color-nyanza: #CAF7E2;
 }
 
 @theme inline {
@@ -14,6 +15,7 @@
   --color-primary-neutral: var(--color-primary-neutral);
   --color-accent-neutral: var(--color-accent-neutral);
   --color-neutral: var(--color-neutral);
+  --color-nyanza: var(--color-nyanza);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -23,6 +25,10 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -69,7 +75,7 @@ body {
   }
   
   .section-title {
-    @apply text-3xl font-bold text-neutral mb-4;
+    @apply text-3xl font-bold mb-4;
   }
 
   .name {

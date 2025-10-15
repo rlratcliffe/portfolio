@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import VideoModal from "./VideoModal";
 import {ISoftwareProject} from "@/app/domain/SoftwareEngineer";
+import styles from "./Projects.module.css";
 
 interface ProjectsProps {
     projects: ISoftwareProject[];
@@ -15,7 +16,7 @@ export default function Projects({projects}: ProjectsProps) {
     return (
         <section id="projects" className="section-container-wide">
             <div className="section-header">
-                <h2 className="section-title">
+                <h2 className={`section-title ${styles.projectsTitle}`}>
                     Projects
                 </h2>
                 <div className="section-divider"></div>
